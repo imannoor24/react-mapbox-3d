@@ -1,5 +1,5 @@
 import React from 'react';
-import Map, {Source, Layer, FullscreenControl, NavigationControl} from 'react-map-gl';
+import Map, {Source, Layer, NavigationControl} from 'react-map-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import layer from './data/pakpop.geojson' ;
 //import LegendControl from 'mapboxgl-legend';
