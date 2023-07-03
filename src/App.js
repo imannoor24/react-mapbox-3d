@@ -6,6 +6,11 @@ import layer from './data/pakpop.geojson' ;
 import 'mapboxgl-legend/dist/style.css'
 import Legend from './components/Legend';
 
+import mapboxgl from 'mapbox-gl';
+
+// eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
+
 function App() {
 
   //const [geoJSONData, setGeoJSONData] = useState(null);
